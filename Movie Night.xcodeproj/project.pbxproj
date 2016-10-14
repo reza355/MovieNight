@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601A94751D506DCB00ECEE89 /* AddMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A94741D506DCB00ECEE89 /* AddMovie.swift */; };
+		601B2DB91D505532007D5BB7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B2DB81D505532007D5BB7 /* Movie.swift */; };
+		60392A7B1D55FF840047D9E4 /* ImbdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60392A7A1D55FF840047D9E4 /* ImbdVC.swift */; };
+		6053E21D1D565A6800B8F8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6053E21B1D565A6800B8F8AA /* Main.storyboard */; };
+		60846A0A1D50663C00B014D9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60846A091D50663C00B014D9 /* DataService.swift */; };
 		60A82D441D4E5137000133C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A82D431D4E5137000133C4 /* AppDelegate.swift */; };
-		60A82D461D4E5137000133C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A82D451D4E5137000133C4 /* ViewController.swift */; };
-		60A82D491D4E5137000133C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A82D471D4E5137000133C4 /* Main.storyboard */; };
 		60A82D4B1D4E5137000133C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A82D4A1D4E5137000133C4 /* Assets.xcassets */; };
 		60A82D4E1D4E5137000133C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A82D4C1D4E5137000133C4 /* LaunchScreen.storyboard */; };
+		60F2AC7E1D4F39F900E01B83 /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F2AC7D1D4F39F900E01B83 /* mainVC.swift */; };
+		60F2AC901D50412300E01B83 /* SFMoviePoster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60F2AC8F1D50412300E01B83 /* SFMoviePoster.ttf */; };
+		60F2AC921D5044DE00E01B83 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F2AC911D5044DE00E01B83 /* MovieListCell.swift */; };
+		60F2AC961D504B3100E01B83 /* SFMoviePosterBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60F2AC951D504B3100E01B83 /* SFMoviePosterBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601A94741D506DCB00ECEE89 /* AddMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovie.swift; sourceTree = "<group>"; };
+		601B2DB81D505532007D5BB7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		60392A7A1D55FF840047D9E4 /* ImbdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImbdVC.swift; sourceTree = "<group>"; };
+		6053E21C1D565A6800B8F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60846A091D50663C00B014D9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		60A82D401D4E5137000133C4 /* Movie Night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A82D431D4E5137000133C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60A82D451D4E5137000133C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60A82D481D4E5137000133C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		60A82D4A1D4E5137000133C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60A82D4A1D4E5137000133C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Movie Night/Assets.xcassets"; sourceTree = "<group>"; };
 		60A82D4D1D4E5137000133C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60A82D4F1D4E5137000133C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F2AC7D1D4F39F900E01B83 /* mainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainVC.swift; sourceTree = "<group>"; };
+		60F2AC8F1D50412300E01B83 /* SFMoviePoster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFMoviePoster.ttf; sourceTree = "<group>"; };
+		60F2AC911D5044DE00E01B83 /* MovieListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
+		60F2AC951D504B3100E01B83 /* SFMoviePosterBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFMoviePosterBold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		605DB7671D4E5DE1001783AE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				60F2AC8F1D50412300E01B83 /* SFMoviePoster.ttf */,
+				60F2AC951D504B3100E01B83 /* SFMoviePosterBold.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
 		60A82D371D4E5137000133C4 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +77,61 @@
 		60A82D421D4E5137000133C4 /* Movie Night */ = {
 			isa = PBXGroup;
 			children = (
+				60A82D551D4E514A000133C4 /* Model */,
+				60A82D561D4E5156000133C4 /* View */,
+				60A82D571D4E515C000133C4 /* Controller */,
+				60A82D5A1D4E52CB000133C4 /* Resources */,
+				60A82D581D4E5163000133C4 /* Util */,
 				60A82D431D4E5137000133C4 /* AppDelegate.swift */,
-				60A82D451D4E5137000133C4 /* ViewController.swift */,
-				60A82D471D4E5137000133C4 /* Main.storyboard */,
-				60A82D4A1D4E5137000133C4 /* Assets.xcassets */,
-				60A82D4C1D4E5137000133C4 /* LaunchScreen.storyboard */,
 				60A82D4F1D4E5137000133C4 /* Info.plist */,
 			);
 			path = "Movie Night";
+			sourceTree = "<group>";
+		};
+		60A82D551D4E514A000133C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				601B2DB81D505532007D5BB7 /* Movie.swift */,
+				60846A091D50663C00B014D9 /* DataService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		60A82D561D4E5156000133C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6053E21B1D565A6800B8F8AA /* Main.storyboard */,
+				60A82D4C1D4E5137000133C4 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		60A82D571D4E515C000133C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60F2AC7D1D4F39F900E01B83 /* mainVC.swift */,
+				60F2AC911D5044DE00E01B83 /* MovieListCell.swift */,
+				601A94741D506DCB00ECEE89 /* AddMovie.swift */,
+				60392A7A1D55FF840047D9E4 /* ImbdVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		60A82D581D4E5163000133C4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		60A82D5A1D4E52CB000133C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60A82D4A1D4E5137000133C4 /* Assets.xcassets */,
+				605DB7671D4E5DE1001783AE /* Font */,
+			);
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60A82D4E1D4E5137000133C4 /* LaunchScreen.storyboard in Resources */,
+				6053E21D1D565A6800B8F8AA /* Main.storyboard in Resources */,
 				60A82D4B1D4E5137000133C4 /* Assets.xcassets in Resources */,
-				60A82D491D4E5137000133C4 /* Main.storyboard in Resources */,
+				60F2AC961D504B3100E01B83 /* SFMoviePosterBold.ttf in Resources */,
+				60F2AC901D50412300E01B83 /* SFMoviePoster.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,18 +210,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A82D461D4E5137000133C4 /* ViewController.swift in Sources */,
 				60A82D441D4E5137000133C4 /* AppDelegate.swift in Sources */,
+				60392A7B1D55FF840047D9E4 /* ImbdVC.swift in Sources */,
+				60F2AC7E1D4F39F900E01B83 /* mainVC.swift in Sources */,
+				601B2DB91D505532007D5BB7 /* Movie.swift in Sources */,
+				60F2AC921D5044DE00E01B83 /* MovieListCell.swift in Sources */,
+				601A94751D506DCB00ECEE89 /* AddMovie.swift in Sources */,
+				60846A0A1D50663C00B014D9 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		60A82D471D4E5137000133C4 /* Main.storyboard */ = {
+		6053E21B1D565A6800B8F8AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				60A82D481D4E5137000133C4 /* Base */,
+				6053E21C1D565A6800B8F8AA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -203,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -244,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -257,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Movie Night/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tedihouse.Movie-Night";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -269,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Movie Night/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tedihouse.Movie-Night";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +374,7 @@
 				60A82D541D4E5137000133C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
