@@ -20,7 +20,7 @@ class mainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "AcademyEngravedLetPlain", size: 23)!]
         //dataservice
         DataService.instance.loadPost()
-        NotificationCenter.default().addObserver(self, selector: #selector(onPostLoaded), name: "loadedPost", object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onPostLoaded), name: NSNotification.Name(rawValue: "loadedPost"), object: nil)
     }
     override func viewDidAppear(_ animated: Bool) {
        movieTableView.reloadData()
@@ -34,12 +34,12 @@ class mainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let posts = DataService.instance.loadedPost[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListCell") as? MovieListCell{
-            cell.configurePost(post: posts)
+            cell.configurePost(posts)
             print(posts)
             return cell
         }else{
             let cell = MovieListCell()
-            cell.configurePost(post: posts)
+            cell.configurePost(posts)
             print(posts)
 
             return cell
@@ -50,9 +50,9 @@ class mainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let movie = DataService.instance.loadedPost[indexPath.row].movieImdbLink
         performSegue(withIdentifier: "ImdbSegue", sender: movie )
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ImdbSegue"{
-            let destinationController = segue.destinationViewController as! ImbdVC
+            let destinationController = segue.destination as! ImbdVC
             if let sender = sender as? String{
                 destinationController.urlStr = sender
             }

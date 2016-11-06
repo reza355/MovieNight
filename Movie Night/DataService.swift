@@ -14,7 +14,7 @@ class DataService{
     let KEY_POST = "MoviePost"
     static let instance = DataService()
     
-    private var _loadedPost = [Movie]()
+    fileprivate var _loadedPost = [Movie]()
     
     var loadedPost: [Movie]{
         return _loadedPost
@@ -22,17 +22,17 @@ class DataService{
     
     func savePost(){
         let postData = NSKeyedArchiver.archivedData(withRootObject: _loadedPost)
-        UserDefaults.standard().object(forKey: KEY_POST)
-        UserDefaults.standard().synchronize()
+        UserDefaults.standard.object(forKey: KEY_POST)
+        UserDefaults.standard.synchronize()
     }
     
     func loadPost(){
-        if let postData = UserDefaults.standard().object(forKey: KEY_POST) as? NSData{
+        if let postData = UserDefaults.standard.object(forKey: KEY_POST) as? NSData{
             if let postArray = NSKeyedUnarchiver.unarchiveObject(with: postData as Data) as? [Movie]{
                 _loadedPost = postArray
             }
         }
-        NotificationCenter.default().post(NSNotification(name: "loadedpost" as NSNotification.Name, object: nil) as Notification)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadedpost"), object: nil)
     }
     
     func addPost(post: Movie){
@@ -57,7 +57,7 @@ class DataService{
     
     func saveImageAndCreatePath(image: UIImage) -> String{
         let imgData = UIImagePNGRepresentation(image)
-        let imgPath = "image\(NSDate.timeIntervalSinceReferenceDate()).png"
+        let imgPath = "image\(NSDate.timeIntervalSinceReferenceDate).png"
         let fullPath = documentPathForFileName(name: imgPath)
         let fileUrl = NSURL(fileURLWithPath: fullPath)
         do {

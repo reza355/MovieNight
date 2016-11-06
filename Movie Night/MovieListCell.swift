@@ -19,7 +19,7 @@ class MovieListCell: UITableViewCell {
         // Initialization code
     }
     
-    func configurePost(post: Movie){
+    func configurePost(_ post: Movie){
         movieTitleLbl.text = post.movieTitle
         movieStudioLbl.text = post.movieStudio
         movieImageImg.image = DataService.instance.imageForPath(path: post.movieImagePath)

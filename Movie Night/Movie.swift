@@ -11,10 +11,10 @@ import Foundation
 
 class Movie: NSObject, NSCoding{
     
-    private var _movieTitle: String!
-    private var _movieStudio: String!
-    private var _movieImagePath: String!
-    private var _movieImbdLink: String!
+    fileprivate var _movieTitle: String!
+    fileprivate var _movieStudio: String!
+    fileprivate var _movieImagePath: String!
+    fileprivate var _movieImbdLink: String!
     
     var movieTitle: String{
         return _movieTitle

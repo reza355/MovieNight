@@ -168,6 +168,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7UJJ655T8G;
 						DevelopmentTeamName = "Endri Arifianto (Personal Team)";
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};

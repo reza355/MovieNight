@@ -19,8 +19,8 @@ class ImbdVC: UIViewController, WKNavigationDelegate{
     override func viewDidAppear(_ animated: Bool) {
      //   let myBlog = "https://www.google.com/"
         if let urlStr = urlStr{
-        let url = NSURL(string: urlStr)
-        let request = NSURLRequest(url:  url! as URL)
+        let url = URL(string: urlStr)
+        let request = URLRequest(url:  url! as URL)
         
         // init and load request in webview.
         webView = WKWebView(frame: self.view.frame)

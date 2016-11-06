@@ -9,7 +9,7 @@
 import UIKit
 
 
-class AddMovie: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddMovie: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var postMovieImg: UIImageView!
     @IBOutlet weak var movieTitleField: UITextField!
@@ -23,6 +23,9 @@ class AddMovie: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        self.movieTitleField.delegate = self
+        self.movieStudioField.delegate = self
+        self.movieImdbLinkField.delegate = self
     }
     
     //add picture from gallery
@@ -36,7 +39,7 @@ class AddMovie: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         postMovieImg.image = image
         dismiss(animated: true, completion: nil)
@@ -55,5 +58,9 @@ class AddMovie: UIViewController, UIImagePickerControllerDelegate, UINavigationC
             navigationController?.popViewController(animated: true)
 
         }
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
